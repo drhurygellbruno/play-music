@@ -21,6 +21,12 @@ let isRandom = false;
 let updateTimer;
 
 const music_list = [
+     {
+        img : 'images/big.jpeg',
+        name : 'PROMOCIONAL',
+        artist : 'BIGUINHO SENSAÇÃO',
+        music : 'music/BIGUINHO SENSAÇÃO (PROMOCIONAL) REPERTÓRIO NOVO - JANEIRO (SERESTA DE VERÃO 2024) MÚSICAS NOVAS.mp3'
+    },
     {  img : './images/K.jpeg',
        name : 'SERESTÃO',
        artist : 'KAZINHA 2024',
@@ -294,7 +300,7 @@ function loadTrack(track_index){
     track_art.style.backgroundImage = "url(" + music_list[track_index].img + ")";
     track_name.textContent = music_list[track_index].name;
     track_artist.textContent = music_list[track_index].artist;
-    now_playing.textContent = "Só Tocar música " + (track_index + 1) + " de " + music_list.length;
+    now_playing.textContent = "Próxima Música Hurygell" + (track_index + 1) + " de " + music_list.length;
 
     updateTimer = setInterval(setUpdate, 1000);
 
